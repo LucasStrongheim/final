@@ -20,7 +20,7 @@ export class CaloricIntakeComponent implements OnInit {
   }
 
   // Calculate BMR based on user input
-  calculateCaloricIntake(gender: string, age: number, height: number, weight: number, activityLevel: number) {
+  calculateBMI(gender: string, age: number, height: number, weight: number, activityLevel: number) {
     // Calculate BMR based on gender, age, height, and weight
     let bmi: number;
     if (gender === 'male') {
@@ -30,7 +30,7 @@ export class CaloricIntakeComponent implements OnInit {
     }
 
 //caloric intake is based off age
-  calculateCaloricIntake(); {
+  calculateCaloricIntake(age, height, weight, activityLevel); {
     if (age < 20){
       this.caloricIntake = "1,800 - 2,400 calories";
         }else if(this.age <40){
@@ -43,11 +43,10 @@ export class CaloricIntakeComponent implements OnInit {
     ;
   }
 
-  // Handle form submission
-  onsubmit() {
-    // Call calculateBMR and calculateCaloricIntake methods
-    this.calculateBMR();
-    this.calculateCaloricIntake();
-  }
+ 
 
 }}
+function calculateCaloricIntake(age: number, height: number, weight: number, activityLevel: number) {
+  throw new Error('Function not implemented.');
+}
+
