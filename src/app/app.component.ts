@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'final';
+  count = 0;
+  cCount = 0;
+  waterCounter(type:String){
+    type==='add'? this.count++:this.count--
+  }
+  calorieCounter(type:String){
+    this.cCount +=100;
+  }
 }
