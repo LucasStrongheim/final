@@ -1,14 +1,17 @@
-<p>What is your age (In years)?</p>
-<input id="age" [(ngModel)]="age" placeholder="What is your Age?">
-<p>What is your height (in m)?</p>
-<input id="height" [(ngModel)]="height" placeholder="What is your height?">
-<p>What is your weight (in kg)?</p>
-<input id="weight" [(ngModel)]="weight" placeholder="What is your weight?">
-<p></p>
-Click Here to calculate your recommened caloric intake!<button (click) = "calculateCaloricIntake(age)">---</button>
-<p>{{caloricIntake}}</p>
-Click Here to calculate your BMI!<button (click) = "calculateBMI(weight, height)">---</button>
-<p>{{bmi}}</p>
+<head></head>
+<body>
+    <p>What is your age (In years)?</p>
+    <input id="age" [(ngModel)]="age" placeholder="What is your Age?">
+    <p>What is your height (in m)?</p>
+    <input id="height" [(ngModel)]="height" placeholder="What is your height?">
+    <p>What is your weight (in kg)?</p>
+    <input id="weight" [(ngModel)]="weight" placeholder="What is your weight?">
+    <p></p>
+    Click Here to calculate your recommened caloric intake!<button (click) = "calculateCaloricIntake(age)">---</button>
+    <p>{{caloricIntake}}</p>
+    Click Here to calculate your BMI!<button (click) = "calculateBMI(weight, height)">---</button>
+    <p>{{bmi}}</p>
+</body>
 <nav>
     <a routerLink="/">back </a>
 </nav>

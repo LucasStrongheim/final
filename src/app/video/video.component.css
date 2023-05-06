@@ -1,6 +1,7 @@
 details {
     font: 16px "Open Sans", Calibri, sans-serif;
     width: 620px;
+    text-align: center;
   }
   
   details > summary {
@@ -23,4 +24,9 @@ details {
   details[open] > summary {
     background-color: #ccf;
   }
-  
+  body{
+    text-align: center;
+  }
+  ul{
+    text-align: center;
+  }
