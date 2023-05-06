@@ -20,15 +20,8 @@ export class CaloricIntakeComponent implements OnInit {
   }
 
   // Calculate BMR based on user input
-  calculateBMI(gender: string, age: number, height: number, weight: number, activityLevel: number) {
-    // Calculate BMR based on gender, age, height, and weight
-    let bmi: number;
-    if (gender === 'male') {
-      bmi = 88.4 + (13.4 * weight) + (4.8 * height) - (5.68 * age);
-    } else {
-      bmi = 447.6 + (9.25 * weight) + (3.10 * height) - (4.33 * age);
-    }
-
+  calculateBMI(weight: number, height: number) {
+      this.bmi = (Math.round((weight / (height*height))*10))/10;
   }
   calculateCaloricIntake(age: number) {
     if (age < 20){
