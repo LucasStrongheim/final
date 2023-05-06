@@ -5,7 +5,7 @@ import { AppComponent } from './app.component';
 
 const routes: Routes = [
   { path: 'video', component: VideoComponent },
-  { path: 'test', component: AppComponent}
+  { path: 'home', component: AppComponent}
 ];
 
 @NgModule({
