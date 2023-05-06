@@ -23,14 +23,15 @@ export class CaloricIntakeComponent implements OnInit {
   }
   
   calculateCaloricIntake(age: number) {
+    this.caloricIntake = "Your daily calorie intake should be around "
     if (age < 20){
-      this.caloricIntake = "1,800 - 2,400 calories";
-        }else if(age <40){
-      this.caloricIntake = "1,800 - 2,200 calories";
-        }else if(this.age <50){
-      this.caloricIntake = "1,600 - 2,200 calories";
+      this.caloricIntake += "1,800 - 2,400 calories";
+        }else if(age < 40){
+      this.caloricIntake += "1,800 - 2,200 calories";
+        }else if(this.age < 50){
+      this.caloricIntake += "1,600 - 2,200 calories";
         }else{
-      this.caloricIntake = "1,600 - 2,000 calories";
+      this.caloricIntake += "1,600 - 2,000 calories";
     }
   }
 }

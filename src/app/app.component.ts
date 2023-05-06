@@ -1,19 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+export class AppComponent implements OnInit {
+  
+  constructor(private router: Router) {}
 
-export class AppComponent {
-  title = 'final';
-  count = 0;
-  cCount = 0;
-  waterCounter(type:String){
-    type==='add'? this.count++:this.count--
-  }
-  calorieCounter(type:String){
-    this.cCount +=100;
+  ngOnInit() {
+    this.router.navigate(['homepage']); // Replace '/default-route' with your desired default route
   }
 }

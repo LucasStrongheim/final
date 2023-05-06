@@ -6,12 +6,20 @@ import { CaloricIntakeComponent } from './caloric-intake/caloric-intake.componen
 import { VideoComponent } from './video/video.component';
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
+import { WaterConsumptionComponent } from './water-consumption/water-consumption.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CaloricIntakeComponent,
     VideoComponent,
+    NavbarComponent,
+    WaterConsumptionComponent,
+    HomepageComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

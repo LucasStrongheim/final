@@ -1,0 +1,23 @@
+body{
+    margin: 3%;
+    margin-top: 1%;
+}
+.bg-image {
+    position: relative; /* Add relative positioning to the container */
+    background-image: url(../../assets/weight-lifting-DARK.jpg);
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-size: cover;
+    background-position: center 50%;
+  }
+  p, h5{
+    margin: 20%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    line-height: 1.8em;
+  }

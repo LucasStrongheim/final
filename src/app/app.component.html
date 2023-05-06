@@ -1,16 +1,5 @@
-<p style="font-size: x-small; text-align: right;">Developed by Lucas Larson, Alan Guajardo, and Kai Janssen!</p>
-<h1 >Fitness Tracker App</h1>
-<hr>  
 <body>
-  <h2>Number of glasses of water drunk today: {{count}}<button (click) = "waterCounter('add')">+</button></h2>
-  <h6>Fun Fact! The daily recommended amount of water to drink is 15 cups!  </h6>
-  <h2>Number of calories consumed today: {{cCount}}<button (click) = "calorieCounter('add')">+</button></h2>
+  <app-navbar></app-navbar>
+  <router-outlet></router-outlet>
+  <app-footer></app-footer>
 </body>
-
-<nav>
-  <a routerLink="caloric-intake" class="square_btn">User Info!</a>
-
-  <p></p>
-  <a routerLink="/video" class="square_btn">Videos for each muscle group! </a>
-</nav>
-<router-outlet></router-outlet>
