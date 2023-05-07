@@ -6,6 +6,8 @@
     <p>What is your weight (in kg)?</p>
     <input id="weight" [(ngModel)]="weight" placeholder="What is your weight?">
     <p></p>
-    <button (click) = "calculateCaloricIntake(age)">Calculate Intake</button>
+    <button (click) = "calculateCaloricIntake(age)">Calculate Reccomened Caloric Intake</button>
     <p>{{caloricIntake}}</p>
+    <button (click) = "calculateBMI(weight,height)">Calculate BMI</button>
+    <p>{{bmi}}</p>
 </body>

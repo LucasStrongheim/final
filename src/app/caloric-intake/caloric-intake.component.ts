@@ -19,10 +19,10 @@ export class CaloricIntakeComponent implements OnInit {
 
   // Calculate BMR based on user input
   calculateBMI(weight: number, height: number) {
-      this.bmi = (Math.round((weight / (height*height))*10))/10;
+      this.bmi = Math.round((weight/((height/100)*(height/100)))*10)/10;
   }
   
-  calculateCaloricIntake(age: number) {
+  calculateCaloricIntake(age: number) { 
     this.caloricIntake = "Your daily calorie intake should be around "
     if (age < 20){
       this.caloricIntake += "1,800 - 2,400 calories";
